@@ -1,0 +1,16 @@
+{"level":"warn","message":"Invalid browser name passed defaulting to chrome","timestamp":"2024-03-10 20:52:14"}
+{"level":"info","message":"Initializing driver for chrome browser...","timestamp":"2024-03-10 20:52:14"}
+{"level":"info","message":"Driver initialized successfully for chrome browser.","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Sending keys \"student\" to element located by: By(css selector, *[id=\"username\"])","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Sending keys \"Password123\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-10 20:52:18"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-10 20:52:19"}
+{"level":"info","message":"Sleeping for 8000 milliseconds...","timestamp":"2024-03-10 20:52:19"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-10 20:52:27"}
+{"level":"info","message":"Quitting driver...","timestamp":"2024-03-10 20:52:27"}
