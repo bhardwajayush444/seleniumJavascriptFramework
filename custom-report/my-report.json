@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-03-12T17:50:59.322Z",
+    "end": "2024-03-12T17:51:16.226Z",
+    "duration": 16904,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "368d08dc-ab86-4d38-a2cd-c461c4ddba14",
+      "title": "",
+      "fullFile": "/Users/ayushbhardwaj/Desktop/seleniumJavascriptFramework/tests/loginTest.spec.js",
+      "file": "/tests/loginTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+          "title": "Example Test Suite",
+          "fullFile": "/Users/ayushbhardwaj/Desktop/seleniumJavascriptFramework/tests/loginTest.spec.js",
+          "file": "/tests/loginTest.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Example Test Suite\"",
+              "fullTitle": "Example Test Suite \"before each\" hook in \"Example Test Suite\"",
+              "timedOut": false,
+              "duration": 3134,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await Driver.initialize();\nloginPage = new LoginPage(driver);\nhelper=new Helper(driver);\nconst csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\nconst testData = await csvReader.readAllData();\n// for(let data of testData){\n//   logger.info(data.username)\n//   logger.info(data.password)\n//   logger.info(data.expected_result)\n// }",
+              "err": {},
+              "uuid": "0b004079-2550-4479-8cef-95d31706497f",
+              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Example Test Suite\"",
+              "fullTitle": "Example Test Suite \"after each\" hook in \"Example Test Suite\"",
+              "timedOut": false,
+              "duration": 210,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if(this.currentTest.state == 'failed'){\n    let imageFileName = this.currentTest.title + '.jpeg';\n    \n    driver.takeScreenshot().then(\n        function(image){\n            require('fs').writeFileSync('./screenshots/' + imageFileName, image, 'base64')\n        }\n    )\n    addContext(this,'Following comes the failed test image')\n    addContext(this, '../screenshots/' + imageFileName)\n}\nawait Driver.quit(driver);",
+              "err": {},
+              "uuid": "95beb6d6-2d99-4c41-a922-daecd96d4244",
+              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Successfull Login",
+              "fullTitle": "Example Test Suite Successfull Login",
+              "timedOut": false,
+              "duration": 5196,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "logger.info('reading first row')\n    const csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\n    const testData = await csvReader.readRow(1)\n    logger.info(testData.username)\n    await loginPage.login('student','Password123')\n    await helper.sleep(5000)\n    const successFullLoginDisplayed=await driver.findElement(LoginPage.successFullLogin).isDisplayed()\n    assert.strictEqual(successFullLoginDisplayed,true)",
+              "err": {},
+              "uuid": "67c48efe-9f49-475c-b6e3-839c05c21020",
+              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessfull Login",
+              "fullTitle": "Example Test Suite Unsuccessfull Login",
+              "timedOut": false,
+              "duration": 5167,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"Following comes the failed test image\",\n  \"../screenshots/Unsuccessfull Login.jpeg\"\n]",
+              "code": "await loginPage.login('student','Password123')\n  await helper.sleep(5000)\n  const successFullLoginDisplayed=await driver.findElement(LoginPage.successFullLogin).isDisplayed()\n  assert.strictEqual(successFullLoginDisplayed,false)",
+              "err": {
+                "message": "AssertionError: Expected values to be strictly equal:\n\ntrue !== false\n",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at Context.<anonymous> (tests/loginTest.spec.js:63:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": "- true\n+ false\n"
+              },
+              "uuid": "00d17380-db7a-49aa-bcf7-ef2153d94d01",
+              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67c48efe-9f49-475c-b6e3-839c05c21020"
+          ],
+          "failures": [
+            "00d17380-db7a-49aa-bcf7-ef2153d94d01"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10363,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 500000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.3.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "custom-report",
+        "reportFilename": "my-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
