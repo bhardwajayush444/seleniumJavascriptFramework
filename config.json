@@ -1,5 +1,5 @@
 {
     
-    "browserName":"safari",
-    "url":"https://practicetestautomation.com/practice-test-login/"
+    "browserName":"chrome",
+    "url":"https://www.saucedemo.com/"
 }

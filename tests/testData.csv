@@ -1,4 +1,0 @@
-username,password,expected_result
-user1,password1,success
-user2,password2,success
-user3,password3,failure

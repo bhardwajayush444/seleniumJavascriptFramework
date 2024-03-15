@@ -4,11 +4,11 @@ const Helper = require('../lib/Helper');
 class LoginPage{
    
   
-    static get userName(){return By.id('username')}
+    static get userName(){return By.id('user-name')}
     static get password(){return By.id('password')}
-    static get submit(){return By.id('submit')}
-    static get successFullLogin(){return By.xpath("//h1[text()='Logged In Successfully']")}
-    
+    static get submit(){return By.id('login-button')}
+    static get lockedUserDisplayed(){return By.xpath("//h3[text()='Epic sadface: Sorry, this user has been locked out.']")}
+   
     constructor(driver){
         /** @type {WebDriver} */
         this.driver=driver

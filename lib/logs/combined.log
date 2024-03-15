@@ -1,32 +1,81 @@
-{"level":"info","message":"Initializing driver for safari browser...","timestamp":"2024-03-12 23:20:59"}
-{"level":"info","message":"Driver initialized successfully for safari browser.","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"reading first row","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"user1","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Sending keys \"student\" to element located by: By(css selector, *[id=\"username\"])","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Scroll successfull","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Sending keys \"Password123\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Scroll successfull","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Click successful.","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Sleeping for 5000 milliseconds...","timestamp":"2024-03-12 23:21:02"}
-{"level":"info","message":"Sleep finished.","timestamp":"2024-03-12 23:21:07"}
-{"level":"info","message":"Quitting driver...","timestamp":"2024-03-12 23:21:07"}
-{"level":"info","message":"Initializing driver for safari browser...","timestamp":"2024-03-12 23:21:07"}
-{"level":"info","message":"Driver initialized successfully for safari browser.","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Sending keys \"student\" to element located by: By(css selector, *[id=\"username\"])","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Scroll successfull","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Sending keys \"Password123\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Scroll successfull","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"submit\"])","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Click successful.","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Sleeping for 5000 milliseconds...","timestamp":"2024-03-12 23:21:10"}
-{"level":"info","message":"Sleep finished.","timestamp":"2024-03-12 23:21:15"}
-{"level":"info","message":"Quitting driver...","timestamp":"2024-03-12 23:21:16"}
+{"level":"info","message":"Initializing driver for chrome browser...","timestamp":"2024-03-15 09:22:33"}
+{"level":"info","message":"Driver initialized successfully for chrome browser.","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"reading first row","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Sending keys \"standard_user\" to element located by: By(css selector, *[id=\"user-name\"])","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Sending keys \"secret_sauce\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Sleeping for 5000 milliseconds...","timestamp":"2024-03-15 09:22:44"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:22:49"}
+{"level":"info","message":"Quitting driver...","timestamp":"2024-03-15 09:22:49"}
+{"level":"info","message":"Initializing driver for chrome browser...","timestamp":"2024-03-15 09:22:50"}
+{"level":"info","message":"Driver initialized successfully for chrome browser.","timestamp":"2024-03-15 09:22:51"}
+{"level":"info","message":"Sending keys \"locked_out_user\" to element located by: By(css selector, *[id=\"user-name\"])","timestamp":"2024-03-15 09:22:51"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:51"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:51"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Sending keys \"secret_sauce\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Sleeping for 5000 milliseconds...","timestamp":"2024-03-15 09:22:52"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:22:57"}
+{"level":"info","message":"Quitting driver...","timestamp":"2024-03-15 09:22:57"}
+{"level":"info","message":"Initializing driver for chrome browser...","timestamp":"2024-03-15 09:22:57"}
+{"level":"info","message":"Driver initialized successfully for chrome browser.","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"reading first row","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Sending keys \"standard_user\" to element located by: By(css selector, *[id=\"user-name\"])","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Sending keys \"secret_sauce\" to element located by: By(css selector, *[id=\"password\"])","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"login-button\"])","timestamp":"2024-03-15 09:22:58"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:22:59"}
+{"level":"info","message":"Sleeping for 5000 milliseconds...","timestamp":"2024-03-15 09:22:59"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"//*[text()='Sauce Labs Backpack']//following::button[1]","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Clicking on element located by: By(xpath, //*[text()='Sauce Labs Backpack']//following::button[1])","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"//*[text()='Sauce Labs Bike Light']//following::button[1]","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Clicking on element located by: By(xpath, //*[text()='Sauce Labs Bike Light']//following::button[1])","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Sleeping for 3000 milliseconds...","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:04"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Clicking on element located by: By(css selector, a[class=\"shopping_cart_link\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"checkout\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Sending keys \"Haritha\" to element located by: By(css selector, *[id=\"first-name\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Sending keys \"HIII\" to element located by: By(css selector, *[id=\"last-name\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Sending keys \"201010\" to element located by: By(css selector, *[id=\"postal-code\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Keys sent successfully.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"continue\"])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Scrolling on element located by: By(css selector, button[id='finish'])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Scroll successfull","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Clicking on element located by: By(css selector, button[id='finish'])","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Sleeping for 2000 milliseconds...","timestamp":"2024-03-15 09:23:07"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:23:09"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"react-burger-menu-btn\"])","timestamp":"2024-03-15 09:23:09"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:09"}
+{"level":"info","message":"Sleeping for 3000 milliseconds...","timestamp":"2024-03-15 09:23:09"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:23:12"}
+{"level":"info","message":"Clicking on element located by: By(css selector, *[id=\"logout_sidebar_link\"])","timestamp":"2024-03-15 09:23:12"}
+{"level":"info","message":"Click successful.","timestamp":"2024-03-15 09:23:12"}
+{"level":"info","message":"Sleeping for 2000 milliseconds...","timestamp":"2024-03-15 09:23:12"}
+{"level":"info","message":"Sleep finished.","timestamp":"2024-03-15 09:23:14"}
+{"level":"info","message":"Quitting driver...","timestamp":"2024-03-15 09:23:14"}

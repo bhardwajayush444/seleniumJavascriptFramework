@@ -2,6 +2,7 @@ const {Builder}=require('selenium-webdriver')
 const fs=require('fs')
 const logger=require('../lib/loggers')
 
+// browser initialization 
 class Driver{
     static async initialize(){
         const config=JSON.parse(fs.readFileSync('./config.json'))

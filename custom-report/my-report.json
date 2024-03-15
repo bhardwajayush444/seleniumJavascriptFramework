@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 1,
+    "suites": 2,
+    "tests": 3,
+    "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2024-03-12T17:50:59.322Z",
-    "end": "2024-03-12T17:51:16.226Z",
-    "duration": 16904,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "start": "2024-03-15T03:52:33.314Z",
+    "end": "2024-03-15T03:53:14.435Z",
+    "duration": 41121,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,45 +18,45 @@
   },
   "results": [
     {
-      "uuid": "368d08dc-ab86-4d38-a2cd-c461c4ddba14",
+      "uuid": "0d78697f-8889-4cf5-9256-34d8fc824103",
       "title": "",
-      "fullFile": "/Users/ayushbhardwaj/Desktop/seleniumJavascriptFramework/tests/loginTest.spec.js",
-      "file": "/tests/loginTest.spec.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "52710683-2f42-4b59-8c5f-9270cafa0abe",
-          "title": "Example Test Suite",
+          "uuid": "121e7a05-c2dc-4683-9876-bf97f2ee0bda",
+          "title": "Login Suite",
           "fullFile": "/Users/ayushbhardwaj/Desktop/seleniumJavascriptFramework/tests/loginTest.spec.js",
           "file": "/tests/loginTest.spec.js",
           "beforeHooks": [
             {
-              "title": "\"before each\" hook in \"Example Test Suite\"",
-              "fullTitle": "Example Test Suite \"before each\" hook in \"Example Test Suite\"",
+              "title": "\"before each\" hook in \"Login Suite\"",
+              "fullTitle": "Login Suite \"before each\" hook in \"Login Suite\"",
               "timedOut": false,
-              "duration": 3134,
+              "duration": 1642,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver = await Driver.initialize();\nloginPage = new LoginPage(driver);\nhelper=new Helper(driver);\nconst csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\nconst testData = await csvReader.readAllData();\n// for(let data of testData){\n//   logger.info(data.username)\n//   logger.info(data.password)\n//   logger.info(data.expected_result)\n// }",
+              "code": "driver = await Driver.initialize();\nloginPage = new LoginPage(driver);\nhelper=new Helper(driver);\ncsvReader = new CSVReader(path.resolve(__dirname, 'loginData.csv'));\ntestData = await csvReader.readAllData();\nhomePage=new HomePage(driver);\n// for(let data of testData){\n//   logger.info(data.username)\n//   logger.info(data.password)\n//   logger.info(data.expected_result)\n// }",
               "err": {},
-              "uuid": "0b004079-2550-4479-8cef-95d31706497f",
-              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "uuid": "be1fcaee-a1b5-4b48-811d-6b8ca26fe5fb",
+              "parentUUID": "121e7a05-c2dc-4683-9876-bf97f2ee0bda",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after each\" hook in \"Example Test Suite\"",
-              "fullTitle": "Example Test Suite \"after each\" hook in \"Example Test Suite\"",
+              "title": "\"after each\" hook in \"Login Suite\"",
+              "fullTitle": "Login Suite \"after each\" hook in \"Login Suite\"",
               "timedOut": false,
-              "duration": 210,
+              "duration": 55,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "if(this.currentTest.state == 'failed'){\n    let imageFileName = this.currentTest.title + '.jpeg';\n    \n    driver.takeScreenshot().then(\n        function(image){\n            require('fs').writeFileSync('./screenshots/' + imageFileName, image, 'base64')\n        }\n    )\n    addContext(this,'Following comes the failed test image')\n    addContext(this, '../screenshots/' + imageFileName)\n}\nawait Driver.quit(driver);",
               "err": {},
-              "uuid": "95beb6d6-2d99-4c41-a922-daecd96d4244",
-              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "uuid": "1268dd35-f895-4834-a92e-a2906e83f68a",
+              "parentUUID": "121e7a05-c2dc-4683-9876-bf97f2ee0bda",
               "isHook": true,
               "skipped": false
             }
@@ -74,55 +74,132 @@
           "tests": [
             {
               "title": "Successfull Login",
-              "fullTitle": "Example Test Suite Successfull Login",
+              "fullTitle": "Login Suite Successfull Login",
               "timedOut": false,
-              "duration": 5196,
+              "duration": 5268,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"Following comes the failed test image\",\n  \"../screenshots/Successfull Login.jpeg\"\n]",
+              "code": "logger.info('reading first row')\n   // const csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\n    testData = await csvReader.readRow(1)\n    await loginPage.login(testData.username,testData.password)\n    await helper.sleep(5000)\n    const successFullLoginDisplayed=await driver.findElement(HomePage.successFullLogin).isDisplayed()\n    assert.strictEqual(successFullLoginDisplayed,false)\n    await homePage.logoff()\n    await helper.sleep(2000)",
+              "err": {
+                "message": "AssertionError: Expected values to be strictly equal:\n\ntrue !== false\n",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at Context.<anonymous> (tests/loginTest.spec.js:61:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": "- true\n+ false\n"
+              },
+              "uuid": "1070de69-306d-4f7a-aa37-ca991174bdd5",
+              "parentUUID": "121e7a05-c2dc-4683-9876-bf97f2ee0bda",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Loked user Login",
+              "fullTitle": "Login Suite Loked user Login",
+              "timedOut": false,
+              "duration": 5204,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "logger.info('reading first row')\n    const csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\n    const testData = await csvReader.readRow(1)\n    logger.info(testData.username)\n    await loginPage.login('student','Password123')\n    await helper.sleep(5000)\n    const successFullLoginDisplayed=await driver.findElement(LoginPage.successFullLogin).isDisplayed()\n    assert.strictEqual(successFullLoginDisplayed,true)",
+              "code": "testData = await csvReader.readRow(2)\n      await loginPage.login(testData.username,testData.password)\n      await helper.sleep(5000)\n      const lockedUserDisplayed=await driver.findElement(LoginPage.lockedUserDisplayed).isDisplayed()\n      assert.strictEqual(lockedUserDisplayed,true)",
               "err": {},
-              "uuid": "67c48efe-9f49-475c-b6e3-839c05c21020",
-              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Unsuccessfull Login",
-              "fullTitle": "Example Test Suite Unsuccessfull Login",
-              "timedOut": false,
-              "duration": 5167,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "[\n  \"Following comes the failed test image\",\n  \"../screenshots/Unsuccessfull Login.jpeg\"\n]",
-              "code": "await loginPage.login('student','Password123')\n  await helper.sleep(5000)\n  const successFullLoginDisplayed=await driver.findElement(LoginPage.successFullLogin).isDisplayed()\n  assert.strictEqual(successFullLoginDisplayed,false)",
-              "err": {
-                "message": "AssertionError: Expected values to be strictly equal:\n\ntrue !== false\n",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at Context.<anonymous> (tests/loginTest.spec.js:63:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
-                "diff": "- true\n+ false\n"
-              },
-              "uuid": "00d17380-db7a-49aa-bcf7-ef2153d94d01",
-              "parentUUID": "52710683-2f42-4b59-8c5f-9270cafa0abe",
+              "uuid": "7bdf3bc3-efd7-4bad-9fd5-de9a0aaa4170",
+              "parentUUID": "121e7a05-c2dc-4683-9876-bf97f2ee0bda",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "67c48efe-9f49-475c-b6e3-839c05c21020"
+            "7bdf3bc3-efd7-4bad-9fd5-de9a0aaa4170"
           ],
           "failures": [
-            "00d17380-db7a-49aa-bcf7-ef2153d94d01"
+            "1070de69-306d-4f7a-aa37-ca991174bdd5"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 10363,
+          "duration": 10472,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 500000
+        },
+        {
+          "uuid": "b0eb7f5b-dc79-4016-a96e-6a329348fef8",
+          "title": "Shopping cart tests",
+          "fullFile": "/Users/ayushbhardwaj/Desktop/seleniumJavascriptFramework/tests/shoppingcartTest.spec.js",
+          "file": "/tests/shoppingcartTest.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Shopping cart tests\"",
+              "fullTitle": "Shopping cart tests \"before each\" hook in \"Shopping cart tests\"",
+              "timedOut": false,
+              "duration": 1662,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await Driver.initialize();\nloginPage = new LoginPage(driver);\nhelper=new Helper(driver);\ncsvReader = new CSVReader(path.resolve(__dirname, 'loginData.csv'));\ntestData = await csvReader.readAllData();\nhomePage=new HomePage(driver);",
+              "err": {},
+              "uuid": "d0f76ed4-3c2f-4b41-ba2e-57648099c1cc",
+              "parentUUID": "b0eb7f5b-dc79-4016-a96e-6a329348fef8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Shopping cart tests\"",
+              "fullTitle": "Shopping cart tests \"after each\" hook in \"Shopping cart tests\"",
+              "timedOut": false,
+              "duration": 55,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if(this.currentTest.state == 'failed'){\n      let imageFileName = this.currentTest.title + '.jpeg';\n      \n      driver.takeScreenshot().then(\n          function(image){\n              require('fs').writeFileSync('./screenshots/' + imageFileName, image, 'base64')\n          }\n      )\n      addContext(this,'Following comes the failed test image')\n      addContext(this, '../screenshots/' + imageFileName)\n  }\n  await Driver.quit(driver);",
+              "err": {},
+              "uuid": "ce78dfe7-1bdd-41fd-91f4-4e42bb2af5e5",
+              "parentUUID": "b0eb7f5b-dc79-4016-a96e-6a329348fef8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Shopping cart tests",
+              "fullTitle": "Shopping cart tests Shopping cart tests",
+              "timedOut": false,
+              "duration": 15556,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "logger.info('reading first row')\n   // const csvReader = new CSVReader(path.resolve(__dirname, 'testData.csv'));\n    testData = await csvReader.readRow(1)\n    await loginPage.login(testData.username,testData.password)\n    await helper.sleep(5000)\n    const successFullLoginDisplayed=await driver.findElement(HomePage.successFullLogin).isDisplayed()\n    assert.strictEqual(successFullLoginDisplayed,true)\n    await homePage.addProductToCart('Sauce Labs Backpack')\n    await homePage.addProductToCart('Sauce Labs Bike Light')\n    await helper.sleep(3000)\n    await homePage.shop('Haritha','HIII','201010')\n    await helper.sleep(2000)\n    await homePage.logoff()\n    await helper.sleep(2000)",
+              "err": {},
+              "uuid": "4b7d3873-0694-4271-8339-da589fe1794f",
+              "parentUUID": "b0eb7f5b-dc79-4016-a96e-6a329348fef8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4b7d3873-0694-4271-8339-da589fe1794f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15556,
           "root": false,
           "rootEmpty": false,
           "_timeout": 500000
